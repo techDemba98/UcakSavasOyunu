@@ -7,10 +7,11 @@ namespace UcakSavasOyunu
 {
     public partial class AnaForm : Form
     {
-        private readonly Oyun _oyun=new Oyun();
+        private readonly Oyun _oyun;
         public AnaForm()   
         {
             InitializeComponent();
+            _oyun = new Oyun(ucaksavarPanel);
             _oyun.GecenSureDegisti += TimerinGecenSuresiDegisti;
         }   
         private void AnaForm_KeyDown(object sender, KeyEventArgs e)
