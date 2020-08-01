@@ -85,7 +85,7 @@
             this.sureLabel.Name = "sureLabel";
             this.sureLabel.Size = new System.Drawing.Size(175, 72);
             this.sureLabel.TabIndex = 1;
-            this.sureLabel.Text = "0:00";
+            this.sureLabel.Text = "00:00";
             this.sureLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // AnaForm

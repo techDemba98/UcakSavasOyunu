@@ -1,6 +1,7 @@
 ﻿using Savas.Library.Concrete;
 using System.Windows.Forms;
 using Savas.Library.Enum;
+using System;
 
 namespace UcakSavasOyunu
 {
@@ -10,11 +11,10 @@ namespace UcakSavasOyunu
         public AnaForm()   
         {
             InitializeComponent();
-        }
-
+            _oyun.GecenSureDegisti += TimerinGecenSuresiDegisti;
+        }   
         private void AnaForm_KeyDown(object sender, KeyEventArgs e)
         {
-            //MessageBox.Show(e.KeyCode.ToString());
             switch(e.KeyCode)
             {
                 case Keys.Enter:
@@ -30,7 +30,11 @@ namespace UcakSavasOyunu
                     _oyun.AtesEt();
                     break;
             }
-
+        }
+        private void TimerinGecenSuresiDegisti(object sender, EventArgs e)
+        {
+            sureLabel.Text = $"{_oyun.GecenSure.Minutes:D2}:{_oyun.GecenSure.Seconds:D2}"; 
+            //sureLabel.Text = _oyun.GecenSure.ToString(@"m\:ss");
         }
     }
 }
