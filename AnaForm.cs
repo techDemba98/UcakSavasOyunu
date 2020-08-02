@@ -11,7 +11,7 @@ namespace UcakSavasOyunu
         public AnaForm()   
         {
             InitializeComponent();
-            _oyun = new Oyun(ucaksavarPanel);
+            _oyun = new Oyun(ucaksavarPanel,savasAlaniPanel);
             _oyun.GecenSureDegisti += TimerinGecenSuresiDegisti;
         }   
         private void AnaForm_KeyDown(object sender, KeyEventArgs e)
