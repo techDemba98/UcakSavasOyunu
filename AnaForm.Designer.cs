@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.bilgiPanel = new System.Windows.Forms.Panel();
+            this.sureLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.ucaksavarPanel = new System.Windows.Forms.Panel();
             this.savasAlaniPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sureLabel = new System.Windows.Forms.Label();
             this.bilgiPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,23 +47,17 @@
             this.bilgiPanel.Size = new System.Drawing.Size(995, 92);
             this.bilgiPanel.TabIndex = 0;
             // 
-            // ucaksavarPanel
+            // sureLabel
             // 
-            this.ucaksavarPanel.BackColor = System.Drawing.Color.Teal;
-            this.ucaksavarPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ucaksavarPanel.Location = new System.Drawing.Point(0, 428);
-            this.ucaksavarPanel.Name = "ucaksavarPanel";
-            this.ucaksavarPanel.Size = new System.Drawing.Size(995, 69);
-            this.ucaksavarPanel.TabIndex = 1;
-            // 
-            // savasAlaniPanel
-            // 
-            this.savasAlaniPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.savasAlaniPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.savasAlaniPanel.Location = new System.Drawing.Point(0, 92);
-            this.savasAlaniPanel.Name = "savasAlaniPanel";
-            this.savasAlaniPanel.Size = new System.Drawing.Size(995, 336);
-            this.savasAlaniPanel.TabIndex = 2;
+            this.sureLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sureLabel.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sureLabel.ForeColor = System.Drawing.Color.White;
+            this.sureLabel.Location = new System.Drawing.Point(820, 9);
+            this.sureLabel.Name = "sureLabel";
+            this.sureLabel.Size = new System.Drawing.Size(175, 72);
+            this.sureLabel.TabIndex = 1;
+            this.sureLabel.Text = "00:00";
+            this.sureLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
@@ -76,17 +70,23 @@
             this.label1.Text = "Oyunu Başlatmak Için ENTER Tuşuna Basın.\r\nUçaksavaları Hareket Ettirmek Için SAĞ/" +
     "SOL Yön Tuşlarına Basın.\r\nAteş Etmek Için BOŞLUK Tuşuna Basın.";
             // 
-            // sureLabel
+            // ucaksavarPanel
             // 
-            this.sureLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.sureLabel.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sureLabel.ForeColor = System.Drawing.Color.White;
-            this.sureLabel.Location = new System.Drawing.Point(820, 9);
-            this.sureLabel.Name = "sureLabel";
-            this.sureLabel.Size = new System.Drawing.Size(175, 72);
-            this.sureLabel.TabIndex = 1;
-            this.sureLabel.Text = "00:00";
-            this.sureLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ucaksavarPanel.BackColor = System.Drawing.Color.Teal;
+            this.ucaksavarPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ucaksavarPanel.Location = new System.Drawing.Point(0, 447);
+            this.ucaksavarPanel.Name = "ucaksavarPanel";
+            this.ucaksavarPanel.Size = new System.Drawing.Size(995, 50);
+            this.ucaksavarPanel.TabIndex = 1;
+            // 
+            // savasAlaniPanel
+            // 
+            this.savasAlaniPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.savasAlaniPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.savasAlaniPanel.Location = new System.Drawing.Point(0, 92);
+            this.savasAlaniPanel.Name = "savasAlaniPanel";
+            this.savasAlaniPanel.Size = new System.Drawing.Size(995, 355);
+            this.savasAlaniPanel.TabIndex = 2;
             // 
             // AnaForm
             // 
